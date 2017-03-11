@@ -8,6 +8,10 @@ class Membro{
     string email;
     int reuniao1;
     int temporamo;
+    int datasativo[10];   //a ideia é colocar em [0] sempre a data atual. Este parametro indica datas de atividade/inatividade
+                          // ou seja, se reuniao1 = 01 janeiro e o membro é ativo desde então, o temporamo recebe datasativo[0]
+                          // menos reuniao1. Se o membro ficou inativo a partir de 15 de janeiro, datasativo[1] vai receber 15 de
+                          // janeiro e dataramo recebe datasativo[1] - reuniao1. 
 
   public: 
     Membro(string n, string mail, int r1, int tramo){
